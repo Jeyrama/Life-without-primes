@@ -32,3 +32,18 @@ function solve(n) {
 };
 
 // or
+
+function isPrime(n) {
+  let s = Math.sqrt(n) | 0;
+  for (let i = 2; i <= s; i++)
+    if (n % i === 0)
+      return false;
+  return true;
+}
+
+function solve(n) {
+  let i = 1;
+  while (n--)
+    while (/[2357]/.test(++i + '') || isPrime(i));
+  return i;
+}
