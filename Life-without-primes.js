@@ -15,3 +15,18 @@ For example:
 
 
 // Solution
+
+function solve(n) {
+  const isPrime = num => {
+    for (let i = 2; i <= num/2; i += 1) {
+      if (num % i === 0) return false;
+    }
+    return true;
+  }
+  let result = 1, i = 1;
+  while (result <= n) {
+    i++
+    if (!isPrime(i) && !/[2357]/.test(i+'')) result++;
+  }
+  return i;
+};
