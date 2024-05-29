@@ -12,3 +12,6 @@ For example:
   solve(0) = 1
   solve(2) = 6
 */
+
+
+// Solution
