@@ -30,3 +30,5 @@ function solve(n) {
   }
   return i;
 };
+
+// or
